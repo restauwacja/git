@@ -7,6 +7,7 @@ import android.widget.BaseAdapter;
 
 import com.example.aib.restauwacja.data.Comment;
 import com.example.aib.restauwacja.data.CommentList;
+import com.example.aib.restauwacja.data.RestauracjaList;
 import com.example.aib.restauwacja.itemView.CommentItemView;
 import com.example.aib.restauwacja.itemView.CommentItemView_;
 
@@ -74,5 +75,7 @@ public class CommentListAdapter extends BaseAdapter {
         commentItemView.bind(getItem(position));
         return commentItemView;
     }
+
+
 }
 

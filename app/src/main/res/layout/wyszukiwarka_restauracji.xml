@@ -1,0 +1,80 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Podaj miasto:"
+        android:id="@+id/podajMiastoTxtView"
+        android:layout_alignBottom="@+id/podajMiastoEditText"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wybierz kuchnie: "
+        android:id="@+id/wybierzKuchnieTxtView"
+        android:layout_below="@+id/podajMiastoEditText"
+        android:textSize="30sp"
+        android:layout_alignBottom="@+id/wybierzKuchnieEditText"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wpiszNazweRestauracjiTxtView"
+        android:text="Podaj nazwę restauracji"
+        android:layout_below="@+id/wybierzKuchnieTxtView"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/wpiszNazweRestauracjiEditText"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/podajMiastoTxtView"
+        android:id="@+id/podajMiastoEditText"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wybierzKuchnieEditText"
+        android:layout_below="@+id/podajMiastoEditText"
+        android:layout_toRightOf="@+id/wybierzKuchnieTxtView"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wpiszNazweRestauracjiEditText"
+        android:layout_below="@+id/wybierzKuchnieEditText"
+        android:layout_toRightOf="@+id/wpiszNazweRestauracjiTxtView"
+       />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Znajdź restaurację"
+        android:id="@+id/znajdzRestauracjeButton"
+        android:layout_below="@+id/wpiszNazweRestauracjiTxtView"
+        android:layout_centerHorizontal="true"
+        />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/znajdzRestauracjeButton"
+        android:id="@+id/restaurationListView">
+
+    </ListView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurationListView"
+        android:text="Rezerwuj stolik"
+        android:id="@+id/rezerwujButton"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>

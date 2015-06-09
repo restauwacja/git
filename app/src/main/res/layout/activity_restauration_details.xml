@@ -26,7 +26,8 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="50dp"
             android:textSize="25dp"
-            android:textColor="#BE1E2D"/>
+            android:textColor="#BE1E2D"
+            android:id="@+id/nazwaRestauracji"/>
 
         <ImageView
             android:layout_width="200dp"
@@ -50,8 +51,44 @@
             Potrawy przyrządzane od podstaw w oparciu o naturalne i świeże
             produkty zaspokajają od lat podniebienia naszych gości.
            "
-            android:textColor="#006838"/>
+            android:textColor="#006838"
+            android:id="@+id/opisRestauracji"/>
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rodzaj kuchni: włoska"
+            android:textColor="#006838"
+            android:textSize="15dp"
+            android:id="@+id/rodzajKuchni"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adres: Okólna 45"
+            android:textColor="#006838"
+            android:textSize="15dp"
+            android:id="@+id/ulica"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sopot 54-234"
+            android:textColor="#006838"
+            android:textSize="15dp"
+            android:id="@+id/miastoIKodPocztowy"
+            />
+
+    </LinearLayout>
+
+
 
     <Button
         android:layout_width="wrap_content"

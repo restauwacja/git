@@ -14,9 +14,11 @@ import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import org.androidannotations.annotations.EActivity;
+
 import java.util.Calendar;
 
-
+@EActivity(R.layout.making_reservation)
 public class DateAndTimePicker extends ActionBarActivity {
 
     EditText edit;

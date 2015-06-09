@@ -21,11 +21,8 @@
         <activity
             android:name=".Login_"
             android:label="RESTAU WACJA">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
 
         <meta-data
@@ -48,11 +45,7 @@
         <activity
             android:name=".DateAndTimePicker_"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="com.example.aib.restauwacja.DateAndTimePicker" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
 
         <activity android:name=".Registration_"/>
@@ -84,6 +77,14 @@
                 <action android:name="com.example.aib.restauwacja.ReservationDetails" />
 
                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WyszukiwarkaRestauracji_"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>

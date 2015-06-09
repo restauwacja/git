@@ -1,8 +1,11 @@
 package com.example.aib.restauwacja;
 
 import com.example.aib.restauwacja.data.EmailAndPassword;
+import com.example.aib.restauwacja.data.Restauracja;
+import com.example.aib.restauwacja.data.RestauracjaList;
 import com.example.aib.restauwacja.data.User;
 
+import org.androidannotations.annotations.rest.Get;
 import org.androidannotations.annotations.rest.Post;
 import org.androidannotations.annotations.rest.RequiresHeader;
 import org.androidannotations.annotations.rest.Rest;
@@ -23,5 +26,30 @@ public interface RestauwacjaRestClient extends RestClientHeaders {
 
         @Post("/user/register/?login=true")
         User registerNewUser(User user);
+
+        @Get("/db/restauracja?filter=name%20%3D%20'{nazwaRestauracji}')")
+        Restauracja getRestaurationDetails(String nazwaRestauracji);
+
+        @Get("{path}")
+        RestauracjaList getRestaurationListbyName(String path);
+
+        @Get("/rest/db/Restauracja?filter=city=\"Sopot\"")
+        RestauracjaList getRestaurationListbyCity();
+
+        @Get()
+        RestauracjaList getRestaurationListbyCuisine(String path);
+
+        @Get("{path}")
+        RestauracjaList getRestaurationListbyNameAndCuisine(String path);
+
+        @Get("{path}")
+        RestauracjaList getRestaurationListbyNameAndCity(String path);
+
+        @Get("{path}")
+        RestauracjaList getRestaurationListbyCityAndCuisine(String path);
+
+        @Get("{path}")
+        RestauracjaList getRestaurationListbyNameCityAndCuisine(String path);
+
 
 }
